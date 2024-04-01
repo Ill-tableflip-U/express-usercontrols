@@ -1,0 +1,132 @@
+{
+  "account_exists": {
+    "status": 409,
+    "code": "account_exists",
+    "msg": "This account already exists",
+    "redirect": "loginredirect"
+  },
+  "authentication_pending": {
+    "status": 200,
+    "code": "authentication_pending",
+    "msg": "If this account exists, an email has been sent to the listed address",
+    "redirect": "mfa_route"
+  },
+  "captcha_error": {
+    "status": 500,
+    "code": "captcha_error",
+    "msg": "Failed to authenticate captcha"
+  },
+  "changed_email": {
+    "status": 200,
+    "code": "changed_email",
+    "msg": "Email updated",
+    "redirect": "loginredirect"
+  },
+  "changed_password": {
+    "status": 200,
+    "code": "changed_password",
+    "msg": "Password changed successfully",
+    "redirect": "loginredirect"
+  },
+  "failed_captcha": {
+    "status": 400,
+    "code": "failed_captcha",
+    "msg": "Captcha validation failed successfully"
+  },
+  "incorrect_login": {
+    "status": 401,
+    "code": "incorrect_login",
+    "msg": "Incorrect email/password",
+    "redirect": "loginredirect"
+  },
+  "invalid_login": {
+    "status": 400,
+    "code": "invalid_login",
+    "msg": "Invalid login details",
+    "redirect": "loginredirect"
+  },
+  "login_2fa": {
+    "status": 200,
+    "code": "login_2fa",
+    "msg": "Verify login with 2-factor authentication",
+    "redirect": "mfa_route"
+  },
+  "phone_authenticate": {
+    "status": 200,
+    "code": "phone_authenticate",
+    "msg": "Enter the phone authentication code",
+    "redirect": "sms_verify_route"
+  },
+  "phone_code_invalid": {
+    "status": 406,
+    "code": "phone_code_invalid",
+    "msg": "The phone verification code provided is invalid",
+    "redirect": "sms_verify_route"
+  },
+  "phone_error": {
+    "status": 500,
+    "code": "phone_error",
+    "msg": "Could not contact the selected phone",
+    "redirect": "sms_route"
+  },
+  "phone_invalid": {
+    "status": 400,
+    "code": "phone_invalid",
+    "msg": "The supplied phone number is invalid",
+    "redirect": "sms_route"
+  },
+  "phone_update_limit": {
+    "status": 429,
+    "code": "phone_update_limit",
+    "msg": "You have updated your phone number too recently",
+    "redirect": "loggedinredirect"
+  },
+  "verify_phone": {
+    "status": 200,
+    "code": "verify_phone",
+    "msg": "Verify your phone number",
+    "redirect": "sms_route"
+  },
+  "phone_update": {
+    "status": 200,
+    "code": "phone_update_success",
+    "msg": "Phone number updated",
+    "redirect": "loggedinredirect"
+  },
+  "phone_remove": {
+    "status": 200,
+    "code": "phone_remove_success",
+    "msg": "Phone number removed from account",
+    "redirect": "loggedinredirect"
+  },
+  
+  "success": {
+    "status": 200,
+    "code": "logged_in",
+    "msg": "Login successful",
+    "redirect": "loggedinredirect"
+  },
+  "incorrect_otp": {
+    "status": 401,
+    "code": "otp_incorrect",
+    "msg": "The authentication code is incorrect",
+    "redirect": "mfa_route"
+  },
+  "phone_otp_limit": {
+    "status": 429,
+    "code": "phone_otp_limit",
+    "msg": "Too many authentication codes sent",
+    "redirect": "sms_verify_route"
+  },
+  "otp_error": {
+    "status": 400,
+    "code": "otp_error",
+    "msg": "An error occurred while fetching the authentication code"
+  },
+  "otp_limit": {
+    "status": 400,
+    "code": "otp_limit",
+    "msg": "Too many incorrect OTP attempts",
+    "redirect":"loginredirect"
+  }
+}
