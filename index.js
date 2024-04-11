@@ -386,7 +386,7 @@ function local_auth(validate_email, default_mfa, auth_route, secret) {
         };
 
         await validate_email(
-          req.session.euc.code.req.session.euc.profile.email
+          req.session.euc.code, req.session.euc.profile.email
         );
         respond(req, res, responses.login_2fa);
       } else {
